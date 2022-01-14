@@ -1,0 +1,20 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/* common styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* header styles */
+.header-section {
+  width: 1100px;
+  height: 80px;
+}
+.header-section h3 {
+  color: #3a3a3a;
+  font-size: 24px;
+}
