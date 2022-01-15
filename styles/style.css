@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 /*----------------
    header styles
  ----------------- */
@@ -20,6 +21,62 @@ header {
 .header-section h3 {
   color: #3a3a3a;
   font-size: 24px;
+}
+.button-style {
+  text-decoration: none;
+  width: 160px;
+  height: 35px;
+  background-color: #e02c6d;
+  color: white;
+  font-size: 16px;
+  border-radius: 41px;
+  margin-top: 5px;
+  text-align: center;
+}
+.button-text {
+  margin: 5px 0;
+}
+
+/* Journey as Influencer styles */
+.influencer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  column-gap: 5%;
+}
+.journey-as-influencer {
+  display: flex;
+  flex-direction: column;
+  width: 582px;
+  height: 300px;
+}
+.journey-as-influencer h1 {
+  color: #3a3a3a;
+  font-size: 50px;
+  margin: 0;
+}
+.journey-as-influencer p {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+}
+.influencer-container:hover .influencer img {
+  transform: rotateZ(45deg) scale(0.8, 0.8);
+  transform-origin: bottom, center;
+}
+
+.influencer {
+  display: flex;
+  position: relative;
+  width: 440px;
+  height: 360px;
+}
+.influencer img {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  transition: transform 2s linear;
 }
 
 /*---------------
@@ -34,8 +91,7 @@ header {
   background-color: #0a0826;
   color: white;
 }
-.footer-styles h3,
-p {
+.footer-styles h3 {
   margin: 0;
   text-align: center;
 }
@@ -44,6 +100,8 @@ p {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   margin-top: 3px;
+  margin: 0;
+  text-align: center;
 }
 .footer-styles a .fab {
   color: white;
