@@ -157,6 +157,23 @@ h3 {
   padding: 0;
   margin: 0;
 }
+.see-more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.see-more .see-more-position {
+  display: flex;
+  align-items: center;
+  width: 1027px;
+  margin-bottom: 5px;
+}
+.see-more a {
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: #e02c6d;
+}
 
 /*---------------
    footer styles 
