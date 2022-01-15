@@ -1,5 +1,5 @@
 /* fonts  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@700&display=swap");
 /* common styles */
 body {
@@ -10,7 +10,23 @@ header {
   display: flex;
   justify-content: center;
 }
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
 
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  column-gap: 5%;
+}
 /*----------------
    header styles
  ----------------- */
@@ -20,7 +36,6 @@ header {
 }
 .header-section h3 {
   color: #3a3a3a;
-  font-size: 24px;
 }
 .button-style {
   text-decoration: none;
@@ -38,13 +53,7 @@ header {
 }
 
 /* Journey as Influencer styles */
-.influencer-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  column-gap: 5%;
-}
+
 .journey-as-influencer {
   display: flex;
   flex-direction: column;
@@ -53,7 +62,6 @@ header {
 }
 .journey-as-influencer h1 {
   color: #3a3a3a;
-  font-size: 50px;
   margin: 0;
 }
 .journey-as-influencer p {
@@ -61,7 +69,7 @@ header {
   font-weight: 600;
   font-size: 16px;
 }
-.influencer-container:hover .influencer img {
+.container:hover .influencer img {
   transform: rotateZ(45deg) scale(0.8, 0.8);
   transform-origin: bottom, center;
 }
@@ -77,6 +85,77 @@ header {
   width: 400px;
   height: 350px;
   transition: transform 2s linear;
+}
+
+/*-------------------------
+  popular collection styles
+  -------------------------
+  */
+.collection-title {
+  text-align: center;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.collections {
+  width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.collections .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 329px;
+  height: 476px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.collections .item img {
+  width: 300px;
+  height: 230px;
+  border-radius: 5px;
+}
+.collections .item h2 {
+  width: 100%;
+  color: #18191f;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-left: 26px;
+  margin-bottom: 0;
+}
+.collections .item h3 {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 6px;
+  margin-left: 26px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.collections .item .item-info {
+  width: 100%;
+  margin-left: 26px;
+}
+.collections .item .item-info .fa-star {
+  color: #fb8200;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+}
+.collections .item .item-info .filled {
+  color: #fb8200;
+}
+.collections .item .item-info .empty {
+  color: rgba(128, 128, 128, 0.514);
+}
+.collections .item .item-info span {
+  margin-left: 8px;
+}
+.collections .item .item-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*---------------
