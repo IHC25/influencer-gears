@@ -51,6 +51,11 @@ h3 {
 .button-text {
   margin: 5px 0;
 }
+.title-style {
+  text-align: center;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
 
 /* Journey as Influencer styles */
 
@@ -91,11 +96,7 @@ h3 {
   popular collection styles
   -------------------------
   */
-.collection-title {
-  text-align: center;
-  color: #3a3a3a;
-  margin-bottom: 30px;
-}
+
 .collections {
   width: 1047px;
   display: grid;
@@ -166,13 +167,35 @@ h3 {
   display: flex;
   align-items: center;
   width: 1027px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .see-more a {
   width: 100%;
   text-align: right;
   text-decoration: none;
   color: #e02c6d;
+}
+/*-----------------
+  customer reviews
+  ------------------
+ */
+.reviews {
+  width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.reviews .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 329px;
+  height: 476px;
+  margin-bottom: 30px;
+}
+.reviews .review img {
+  width: 150px;
+  height: 150px;
 }
 
 /*---------------
