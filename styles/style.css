@@ -37,6 +37,10 @@ h3 {
 .header-section h3 {
   color: #3a3a3a;
 }
+.button-style-container {
+  display: flex;
+  width: 100%;
+}
 .button-style {
   text-decoration: none;
   width: 160px;
@@ -229,4 +233,53 @@ h3 {
   margin-top: 17px;
   margin-right: 22px;
   margin-left: 10px;
+}
+
+/* Media Queries */
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+  .header-styles {
+    text-align: center;
+  }
+  .journey-as-influencer h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .journey-as-influencer p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .button-style-container {
+    justify-content: center;
+  }
+  .influencer {
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+  }
+  .influencer img {
+    width: 300px;
+    height: 200px;
+  }
+  .collections {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .see-more {
+    width: 95%;
+  }
+  .reviews {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title-style {
+    margin-bottom: 0;
+  }
+  .reviews .review {
+    height: 329px;
+  }
+  .review p {
+    text-align: center;
+  }
 }
