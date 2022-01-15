@@ -4,6 +4,7 @@
 /* common styles */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 header {
   width: 100%;
@@ -275,6 +276,49 @@ h3 {
   }
   .title-style {
     margin-bottom: 0;
+  }
+  .reviews .review {
+    height: 329px;
+  }
+  .review p {
+    text-align: center;
+  }
+}
+/* Tablet devices */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .header-styles {
+    text-align: center;
+  }
+  .journey-as-influencer h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .journey-as-influencer p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .button-style-container {
+    justify-content: center;
+  }
+  .influencer {
+    width: 400px;
+    height: 250px;
+    justify-content: center;
+  }
+  .influencer img {
+    width: 300px;
+    height: 200px;
+  }
+  .collections {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .see-more {
+    width: 90%;
+  }
+  .reviews {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
   }
   .reviews .review {
     height: 329px;
